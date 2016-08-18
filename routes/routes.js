@@ -2,7 +2,7 @@ var express = require("express");
 var mongoose = require("mongoose");
 var router = express.Router();
 var validator = require("validator");
-mongoose.connect(process.env.MONGOLAB_URI); // connects to data database
+mongoose.connect(proccess.env.MONGOLAB_URI); // connects to data database
 
 // informs database connection
 mongoose.connection.once('open',function(){
