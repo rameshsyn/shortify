@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #003d69;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.shortify {
+	/*background: #222;*/
+	max-width: 600px;
+	height: 400px;
+	margin: 10px auto;
+	text-align: center;
+}
+.shortify > h1 {
+	/*background: green;*/
+	font-size: 400%;
+  padding: 10px;
+	color: #ffc107;
+}
+.shortify > h3 {
+	/*background: orange;*/
+	padding: 10px;
+	margin: 0 0 70px 0;
+	color: #b8f770;
+}
+.shortify > p {
+	margin-top: 100px;
+}
+.shortify > p > a {
+	color: #f5ea99;
+}
+.shortify-area {
+	/*background: #fda;*/
+	text-align: left;
+	padding: 10px;
+}
+.shortify-area input,
+.shortify-area button {
+	padding: 10px;
+	font-size: 130%;
+	outline: none;
+	padding: 10px;
+	border-radius: 2px;
+	margin: 5px auto;
+}
+.shortify-area input {
+	width: 75%;
+	border: 4px solid transparent;
+  color: #445050;
+
+}
+.shortify-area button {
+	width: 24%;
+	min-width: 100px;
+	border: 4px solid transparent;
+	background: green;
+	color: #fff;
+  cursor: pointer;
+  transition: background 1s;
+
+}
+.shortify-area button:hover {
+  background: #1d631d;
+}
+
+.shorten-area {
+	display: none;
+	background: #057369;
+	width: auto;
+	height: 100px;
+	color: #fff;
+	padding: 10px 20px;
+	margin: 50px auto;
+	border-radius: 4px;
+
+}
+.shorten-area > h2 {
+	background: #fff;
+	display: inline-block;
+	color: #847f44;
+	padding: 10px;
+  border-radius: 5px;
+}
+.shorten-area > button {
+	min-width: 100px;
+	margin: 15px;
+	border: 1px solid #fff;
+	background: green;
+	color: #fff;
+  cursor: pointer;
+	padding: 12px;
+  border-radius: 5px;
+}
