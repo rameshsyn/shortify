@@ -4,13 +4,9 @@ var router = express.Router();
 var validator = require("validator");
 mongoose.connect(process.env.MONGOLAB_URI); // connects to data database
 
-// informs database connection
-mongoose.connection.once('open',function(){
-   console.log("DB connected !");
-});
 var Schema = mongoose.Schema;
 
-var hostUrl = "https://shortify.tk";
+var hostUrl = process.env.DOMAIN;
 // makes new url schema
 var urlSchema = new Schema({
    original_URL: String,

@@ -2,9 +2,10 @@ var express = require("express");
 var path = require("path");
 var bodyParser = require("body-parser");
 var hbs = require("express-handlebars");
-var routes = require("./routes/routes");
-var app = express();
 var favicon = require("serve-favicon");
+var app = express();
+require('dotenv').config();
+var routes = require("./routes/routes");
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
